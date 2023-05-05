@@ -19,9 +19,26 @@ namespace UC11_AGENDA
 
         private void buttonCADASTRAR_Click(object sender, EventArgs e)
         {
-            Form CADASTRO = new Form();
+            Form CADASTRO = new CADASTRO();
             CADASTRO.Show();
+        }
 
+        private void buttonALTERAR_Click(object sender, EventArgs e)
+        {
+            Form ALTERAR = new ALTERAR();
+            ALTERAR.Show();
+        }
+
+        private void buttonEXCLUIR_Click(object sender, EventArgs e)
+        {
+            Form EXCLUIR = new EXCLUIR();
+            EXCLUIR.Show();
+        }
+
+        private void buttonPESQUISA_Click(object sender, EventArgs e)
+        {
+            Form PESQUISA = new PESQUISA();
+            PESQUISA.Show();
         }
     }
 }

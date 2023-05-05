@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AGENDA));
             this.buttonCADASTRAR = new System.Windows.Forms.Button();
             this.buttonALTERAR = new System.Windows.Forms.Button();
             this.buttonEXCLUIR = new System.Windows.Forms.Button();
@@ -54,6 +55,7 @@
             this.buttonALTERAR.TabIndex = 1;
             this.buttonALTERAR.Text = "alterar";
             this.buttonALTERAR.UseVisualStyleBackColor = true;
+            this.buttonALTERAR.Click += new System.EventHandler(this.buttonALTERAR_Click);
             // 
             // buttonEXCLUIR
             // 
@@ -64,6 +66,7 @@
             this.buttonEXCLUIR.TabIndex = 2;
             this.buttonEXCLUIR.Text = "excluir";
             this.buttonEXCLUIR.UseVisualStyleBackColor = true;
+            this.buttonEXCLUIR.Click += new System.EventHandler(this.buttonEXCLUIR_Click);
             // 
             // buttonPESQUISA
             // 
@@ -74,6 +77,7 @@
             this.buttonPESQUISA.TabIndex = 3;
             this.buttonPESQUISA.Text = "pesquisar";
             this.buttonPESQUISA.UseVisualStyleBackColor = true;
+            this.buttonPESQUISA.Click += new System.EventHandler(this.buttonPESQUISA_Click);
             // 
             // AGENDA
             // 
@@ -85,6 +89,7 @@
             this.Controls.Add(this.buttonEXCLUIR);
             this.Controls.Add(this.buttonALTERAR);
             this.Controls.Add(this.buttonCADASTRAR);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AGENDA";
             this.Text = "Form1";
             this.ResumeLayout(false);

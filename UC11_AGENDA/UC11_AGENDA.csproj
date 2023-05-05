@@ -110,6 +110,12 @@
     <Compile Include="EXCLUIR.Designer.cs">
       <DependentUpon>EXCLUIR.cs</DependentUpon>
     </Compile>
+    <Compile Include="PESQUISA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PESQUISA.Designer.cs">
+      <DependentUpon>PESQUISA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AGENDA.resx">
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EXCLUIR.resx">
       <DependentUpon>EXCLUIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PESQUISA.resx">
+      <DependentUpon>PESQUISA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
