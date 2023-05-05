@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UC11_AGENDA
 {
-    public partial class Form1 : Form
+    public partial class CADASTRO : Form
     {
-        public Form1()
+        public CADASTRO()
         {
             InitializeComponent();
         }
