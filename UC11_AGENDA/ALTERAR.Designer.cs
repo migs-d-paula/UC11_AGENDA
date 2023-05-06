@@ -55,6 +55,7 @@
             this.buttonALTERAR.TabIndex = 34;
             this.buttonALTERAR.Text = "Alterar";
             this.buttonALTERAR.UseVisualStyleBackColor = true;
+            this.buttonALTERAR.Click += new System.EventHandler(this.buttonALTERAR_Click);
             // 
             // radioButtonDESBLOQUEADO
             // 

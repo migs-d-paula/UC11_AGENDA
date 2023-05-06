@@ -32,7 +32,7 @@
             this.textBoxNOME = new System.Windows.Forms.TextBox();
             this.textBoxSOBRENOME = new System.Windows.Forms.TextBox();
             this.textBoxTELEFONE = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxEMAIL = new System.Windows.Forms.TextBox();
             this.textBoxCELULAR = new System.Windows.Forms.TextBox();
             this.textBoxLINKEDIN = new System.Windows.Forms.TextBox();
             this.labelNOME = new System.Windows.Forms.Label();
@@ -41,9 +41,9 @@
             this.labelTELEFONE = new System.Windows.Forms.Label();
             this.labelLINKEDIN = new System.Windows.Forms.Label();
             this.labelEMAIL = new System.Windows.Forms.Label();
+            this.buttonCADASTRAR = new System.Windows.Forms.Button();
             this.radioButtonBLOQUEADO = new System.Windows.Forms.RadioButton();
             this.radioButtonDESBLOQUEADO = new System.Windows.Forms.RadioButton();
-            this.buttonCADASTRAR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxNOME
@@ -67,12 +67,12 @@
             this.textBoxTELEFONE.Size = new System.Drawing.Size(436, 20);
             this.textBoxTELEFONE.TabIndex = 3;
             // 
-            // textBox4
+            // textBoxEMAIL
             // 
-            this.textBox4.Location = new System.Drawing.Point(210, 300);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(436, 20);
-            this.textBox4.TabIndex = 6;
+            this.textBoxEMAIL.Location = new System.Drawing.Point(210, 300);
+            this.textBoxEMAIL.Name = "textBoxEMAIL";
+            this.textBoxEMAIL.Size = new System.Drawing.Size(436, 20);
+            this.textBoxEMAIL.TabIndex = 6;
             // 
             // textBoxCELULAR
             // 
@@ -148,6 +148,17 @@
             this.labelEMAIL.TabIndex = 14;
             this.labelEMAIL.Text = "E-mail :";
             // 
+            // buttonCADASTRAR
+            // 
+            this.buttonCADASTRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCADASTRAR.Location = new System.Drawing.Point(345, 493);
+            this.buttonCADASTRAR.Name = "buttonCADASTRAR";
+            this.buttonCADASTRAR.Size = new System.Drawing.Size(155, 34);
+            this.buttonCADASTRAR.TabIndex = 19;
+            this.buttonCADASTRAR.Text = "Cadastrar";
+            this.buttonCADASTRAR.UseVisualStyleBackColor = true;
+            this.buttonCADASTRAR.Click += new System.EventHandler(this.buttonCADASTRAR_Click);
+            // 
             // radioButtonBLOQUEADO
             // 
             this.radioButtonBLOQUEADO.AutoSize = true;
@@ -174,16 +185,6 @@
             this.radioButtonDESBLOQUEADO.Text = "Desbloqueado";
             this.radioButtonDESBLOQUEADO.UseVisualStyleBackColor = true;
             // 
-            // buttonCADASTRAR
-            // 
-            this.buttonCADASTRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCADASTRAR.Location = new System.Drawing.Point(345, 493);
-            this.buttonCADASTRAR.Name = "buttonCADASTRAR";
-            this.buttonCADASTRAR.Size = new System.Drawing.Size(155, 34);
-            this.buttonCADASTRAR.TabIndex = 19;
-            this.buttonCADASTRAR.Text = "Cadastrar";
-            this.buttonCADASTRAR.UseVisualStyleBackColor = true;
-            // 
             // CADASTRO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,7 +201,7 @@
             this.Controls.Add(this.labelSOBRENOME);
             this.Controls.Add(this.labelNOME);
             this.Controls.Add(this.textBoxLINKEDIN);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxEMAIL);
             this.Controls.Add(this.textBoxCELULAR);
             this.Controls.Add(this.textBoxTELEFONE);
             this.Controls.Add(this.textBoxSOBRENOME);
@@ -218,7 +219,7 @@
         private System.Windows.Forms.TextBox textBoxNOME;
         private System.Windows.Forms.TextBox textBoxSOBRENOME;
         private System.Windows.Forms.TextBox textBoxTELEFONE;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxEMAIL;
         private System.Windows.Forms.TextBox textBoxCELULAR;
         private System.Windows.Forms.TextBox textBoxLINKEDIN;
         private System.Windows.Forms.Label labelNOME;
@@ -227,8 +228,8 @@
         private System.Windows.Forms.Label labelTELEFONE;
         private System.Windows.Forms.Label labelLINKEDIN;
         private System.Windows.Forms.Label labelEMAIL;
+        private System.Windows.Forms.Button buttonCADASTRAR;
         private System.Windows.Forms.RadioButton radioButtonBLOQUEADO;
         private System.Windows.Forms.RadioButton radioButtonDESBLOQUEADO;
-        private System.Windows.Forms.Button buttonCADASTRAR;
     }
 }
