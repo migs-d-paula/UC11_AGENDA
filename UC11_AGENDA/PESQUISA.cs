@@ -32,7 +32,7 @@ namespace UC11_AGENDA
             try
             {
                 conexao.Open();
-                comando.CommandText = "SELECT * FROM tbl_agenda;";
+                comando.CommandText = "SELECT * FROM tbl_agenda ORDER BY nome ASC;";
 
                 MySqlDataAdapter adaptadorPESQUISA = new MySqlDataAdapter(comando);
 
@@ -65,7 +65,7 @@ namespace UC11_AGENDA
             try
             {
                 conexao.Open();
-                comando.CommandText = "SELECT * FROM tbl_agenda;";
+                comando.CommandText = "SELECT nome FROM tbl_agenda ORDER BY nome ASC;";
 
                 MySqlDataAdapter adaptadorPESQUISA = new MySqlDataAdapter(comando);
 

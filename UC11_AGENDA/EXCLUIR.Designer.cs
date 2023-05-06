@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EXCLUIR));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonEXCLUIR = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxNOME = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxSOBRENOME = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxID
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(353, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxID.Location = new System.Drawing.Point(114, 54);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(353, 20);
+            this.textBoxID.TabIndex = 0;
             // 
             // label1
             // 
@@ -55,16 +55,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "id :";
             // 
-            // button1
+            // buttonEXCLUIR
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(219, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonEXCLUIR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEXCLUIR.Location = new System.Drawing.Point(219, 237);
+            this.buttonEXCLUIR.Name = "buttonEXCLUIR";
+            this.buttonEXCLUIR.Size = new System.Drawing.Size(117, 33);
+            this.buttonEXCLUIR.TabIndex = 2;
+            this.buttonEXCLUIR.Text = "Excluir";
+            this.buttonEXCLUIR.UseVisualStyleBackColor = true;
+            this.buttonEXCLUIR.Click += new System.EventHandler(this.buttonEXCLUIR_Click);
             // 
             // label2
             // 
@@ -76,12 +76,12 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "nome :";
             // 
-            // textBox2
+            // textBoxNOME
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(353, 20);
-            this.textBox2.TabIndex = 3;
+            this.textBoxNOME.Location = new System.Drawing.Point(114, 111);
+            this.textBoxNOME.Name = "textBoxNOME";
+            this.textBoxNOME.Size = new System.Drawing.Size(353, 20);
+            this.textBoxNOME.TabIndex = 3;
             // 
             // label3
             // 
@@ -93,12 +93,12 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "sobrenome :";
             // 
-            // textBox3
+            // textBoxSOBRENOME
             // 
-            this.textBox3.Location = new System.Drawing.Point(114, 168);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(353, 20);
-            this.textBox3.TabIndex = 7;
+            this.textBoxSOBRENOME.Location = new System.Drawing.Point(114, 168);
+            this.textBoxSOBRENOME.Name = "textBoxSOBRENOME";
+            this.textBoxSOBRENOME.Size = new System.Drawing.Size(353, 20);
+            this.textBoxSOBRENOME.TabIndex = 7;
             // 
             // EXCLUIR
             // 
@@ -107,12 +107,12 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(553, 341);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxSOBRENOME);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBoxNOME);
+            this.Controls.Add(this.buttonEXCLUIR);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxID);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EXCLUIR";
             this.Text = "EXCLUIR";
@@ -124,12 +124,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonEXCLUIR;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxNOME;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxSOBRENOME;
     }
 }

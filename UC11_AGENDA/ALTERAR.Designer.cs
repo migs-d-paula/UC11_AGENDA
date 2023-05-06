@@ -39,17 +39,19 @@
             this.labelSOBRENOME = new System.Windows.Forms.Label();
             this.labelNOME = new System.Windows.Forms.Label();
             this.textBoxLINKEDIN = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxEMAIL = new System.Windows.Forms.TextBox();
             this.textBoxCELULAR = new System.Windows.Forms.TextBox();
             this.textBoxTELEFONE = new System.Windows.Forms.TextBox();
             this.textBoxSOBRENOME = new System.Windows.Forms.TextBox();
             this.textBoxNOME = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonALTERAR
             // 
             this.buttonALTERAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonALTERAR.Location = new System.Drawing.Point(347, 496);
+            this.buttonALTERAR.Location = new System.Drawing.Point(350, 517);
             this.buttonALTERAR.Name = "buttonALTERAR";
             this.buttonALTERAR.Size = new System.Drawing.Size(155, 34);
             this.buttonALTERAR.TabIndex = 34;
@@ -62,7 +64,7 @@
             this.radioButtonDESBLOQUEADO.AutoSize = true;
             this.radioButtonDESBLOQUEADO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonDESBLOQUEADO.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonDESBLOQUEADO.Location = new System.Drawing.Point(212, 418);
+            this.radioButtonDESBLOQUEADO.Location = new System.Drawing.Point(215, 439);
             this.radioButtonDESBLOQUEADO.Name = "radioButtonDESBLOQUEADO";
             this.radioButtonDESBLOQUEADO.Size = new System.Drawing.Size(131, 24);
             this.radioButtonDESBLOQUEADO.TabIndex = 33;
@@ -75,7 +77,7 @@
             this.radioButtonBLOQUEADO.AutoSize = true;
             this.radioButtonBLOQUEADO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonBLOQUEADO.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonBLOQUEADO.Location = new System.Drawing.Point(544, 418);
+            this.radioButtonBLOQUEADO.Location = new System.Drawing.Point(547, 439);
             this.radioButtonBLOQUEADO.Name = "radioButtonBLOQUEADO";
             this.radioButtonBLOQUEADO.Size = new System.Drawing.Size(104, 24);
             this.radioButtonBLOQUEADO.TabIndex = 32;
@@ -87,7 +89,7 @@
             // 
             this.labelLINKEDIN.AutoSize = true;
             this.labelLINKEDIN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelLINKEDIN.Location = new System.Drawing.Point(141, 363);
+            this.labelLINKEDIN.Location = new System.Drawing.Point(144, 384);
             this.labelLINKEDIN.Name = "labelLINKEDIN";
             this.labelLINKEDIN.Size = new System.Drawing.Size(53, 13);
             this.labelLINKEDIN.TabIndex = 31;
@@ -97,7 +99,7 @@
             // 
             this.labelEMAIL.AutoSize = true;
             this.labelEMAIL.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelEMAIL.Location = new System.Drawing.Point(153, 306);
+            this.labelEMAIL.Location = new System.Drawing.Point(156, 327);
             this.labelEMAIL.Name = "labelEMAIL";
             this.labelEMAIL.Size = new System.Drawing.Size(41, 13);
             this.labelEMAIL.TabIndex = 30;
@@ -107,7 +109,7 @@
             // 
             this.labelCELULAR.AutoSize = true;
             this.labelCELULAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelCELULAR.Location = new System.Drawing.Point(149, 249);
+            this.labelCELULAR.Location = new System.Drawing.Point(152, 270);
             this.labelCELULAR.Name = "labelCELULAR";
             this.labelCELULAR.Size = new System.Drawing.Size(45, 13);
             this.labelCELULAR.TabIndex = 29;
@@ -117,7 +119,7 @@
             // 
             this.labelTELEFONE.AutoSize = true;
             this.labelTELEFONE.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTELEFONE.Location = new System.Drawing.Point(139, 192);
+            this.labelTELEFONE.Location = new System.Drawing.Point(142, 213);
             this.labelTELEFONE.Name = "labelTELEFONE";
             this.labelTELEFONE.Size = new System.Drawing.Size(55, 13);
             this.labelTELEFONE.TabIndex = 28;
@@ -127,7 +129,7 @@
             // 
             this.labelSOBRENOME.AutoSize = true;
             this.labelSOBRENOME.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelSOBRENOME.Location = new System.Drawing.Point(127, 135);
+            this.labelSOBRENOME.Location = new System.Drawing.Point(130, 156);
             this.labelSOBRENOME.Name = "labelSOBRENOME";
             this.labelSOBRENOME.Size = new System.Drawing.Size(67, 13);
             this.labelSOBRENOME.TabIndex = 27;
@@ -137,7 +139,7 @@
             // 
             this.labelNOME.AutoSize = true;
             this.labelNOME.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelNOME.Location = new System.Drawing.Point(153, 78);
+            this.labelNOME.Location = new System.Drawing.Point(156, 99);
             this.labelNOME.Name = "labelNOME";
             this.labelNOME.Size = new System.Drawing.Size(41, 13);
             this.labelNOME.TabIndex = 26;
@@ -145,52 +147,71 @@
             // 
             // textBoxLINKEDIN
             // 
-            this.textBoxLINKEDIN.Location = new System.Drawing.Point(212, 360);
+            this.textBoxLINKEDIN.Location = new System.Drawing.Point(215, 381);
             this.textBoxLINKEDIN.Name = "textBoxLINKEDIN";
             this.textBoxLINKEDIN.Size = new System.Drawing.Size(436, 20);
             this.textBoxLINKEDIN.TabIndex = 25;
             // 
-            // textBox4
+            // textBoxEMAIL
             // 
-            this.textBox4.Location = new System.Drawing.Point(212, 303);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(436, 20);
-            this.textBox4.TabIndex = 24;
+            this.textBoxEMAIL.Location = new System.Drawing.Point(215, 324);
+            this.textBoxEMAIL.Name = "textBoxEMAIL";
+            this.textBoxEMAIL.Size = new System.Drawing.Size(436, 20);
+            this.textBoxEMAIL.TabIndex = 24;
             // 
             // textBoxCELULAR
             // 
-            this.textBoxCELULAR.Location = new System.Drawing.Point(212, 246);
+            this.textBoxCELULAR.Location = new System.Drawing.Point(215, 267);
             this.textBoxCELULAR.Name = "textBoxCELULAR";
             this.textBoxCELULAR.Size = new System.Drawing.Size(436, 20);
             this.textBoxCELULAR.TabIndex = 23;
             // 
             // textBoxTELEFONE
             // 
-            this.textBoxTELEFONE.Location = new System.Drawing.Point(212, 189);
+            this.textBoxTELEFONE.Location = new System.Drawing.Point(215, 210);
             this.textBoxTELEFONE.Name = "textBoxTELEFONE";
             this.textBoxTELEFONE.Size = new System.Drawing.Size(436, 20);
             this.textBoxTELEFONE.TabIndex = 22;
             // 
             // textBoxSOBRENOME
             // 
-            this.textBoxSOBRENOME.Location = new System.Drawing.Point(212, 132);
+            this.textBoxSOBRENOME.Location = new System.Drawing.Point(215, 153);
             this.textBoxSOBRENOME.Name = "textBoxSOBRENOME";
             this.textBoxSOBRENOME.Size = new System.Drawing.Size(436, 20);
             this.textBoxSOBRENOME.TabIndex = 21;
             // 
             // textBoxNOME
             // 
-            this.textBoxNOME.Location = new System.Drawing.Point(212, 75);
+            this.textBoxNOME.Location = new System.Drawing.Point(215, 96);
             this.textBoxNOME.Name = "textBoxNOME";
             this.textBoxNOME.Size = new System.Drawing.Size(436, 20);
             this.textBoxNOME.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(176, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "id :";
+            // 
+            // textBoxID
+            // 
+            this.textBoxID.Location = new System.Drawing.Point(215, 39);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(436, 20);
+            this.textBoxID.TabIndex = 35;
             // 
             // ALTERAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 586);
+            this.ClientSize = new System.Drawing.Size(800, 610);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.buttonALTERAR);
             this.Controls.Add(this.radioButtonDESBLOQUEADO);
             this.Controls.Add(this.radioButtonBLOQUEADO);
@@ -201,7 +222,7 @@
             this.Controls.Add(this.labelSOBRENOME);
             this.Controls.Add(this.labelNOME);
             this.Controls.Add(this.textBoxLINKEDIN);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxEMAIL);
             this.Controls.Add(this.textBoxCELULAR);
             this.Controls.Add(this.textBoxTELEFONE);
             this.Controls.Add(this.textBoxSOBRENOME);
@@ -226,10 +247,12 @@
         private System.Windows.Forms.Label labelSOBRENOME;
         private System.Windows.Forms.Label labelNOME;
         private System.Windows.Forms.TextBox textBoxLINKEDIN;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxEMAIL;
         private System.Windows.Forms.TextBox textBoxCELULAR;
         private System.Windows.Forms.TextBox textBoxTELEFONE;
         private System.Windows.Forms.TextBox textBoxSOBRENOME;
         private System.Windows.Forms.TextBox textBoxNOME;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxID;
     }
 }
