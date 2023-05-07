@@ -36,6 +36,9 @@
             this.textBoxNOME = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxSOBRENOME = new System.Windows.Forms.TextBox();
+            this.labelSELECIONAR = new System.Windows.Forms.Label();
+            this.dataGridViewSELECIONAR = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSELECIONAR)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxID
@@ -100,12 +103,34 @@
             this.textBoxSOBRENOME.Size = new System.Drawing.Size(353, 20);
             this.textBoxSOBRENOME.TabIndex = 7;
             // 
+            // labelSELECIONAR
+            // 
+            this.labelSELECIONAR.AutoSize = true;
+            this.labelSELECIONAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelSELECIONAR.Location = new System.Drawing.Point(410, 191);
+            this.labelSELECIONAR.Name = "labelSELECIONAR";
+            this.labelSELECIONAR.Size = new System.Drawing.Size(57, 13);
+            this.labelSELECIONAR.TabIndex = 9;
+            this.labelSELECIONAR.Text = "Selecionar";
+            this.labelSELECIONAR.Click += new System.EventHandler(this.labelSELECIONAR_Click);
+            // 
+            // dataGridViewSELECIONAR
+            // 
+            this.dataGridViewSELECIONAR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSELECIONAR.Location = new System.Drawing.Point(548, 13);
+            this.dataGridViewSELECIONAR.Name = "dataGridViewSELECIONAR";
+            this.dataGridViewSELECIONAR.Size = new System.Drawing.Size(552, 316);
+            this.dataGridViewSELECIONAR.TabIndex = 10;
+            this.dataGridViewSELECIONAR.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSELECIONAR_CellContentClick);
+            // 
             // EXCLUIR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(553, 341);
+            this.ClientSize = new System.Drawing.Size(1112, 341);
+            this.Controls.Add(this.dataGridViewSELECIONAR);
+            this.Controls.Add(this.labelSELECIONAR);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxSOBRENOME);
             this.Controls.Add(this.label2);
@@ -117,6 +142,7 @@
             this.Name = "EXCLUIR";
             this.Text = "EXCLUIR";
             this.Load += new System.EventHandler(this.EXCLUIR_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSELECIONAR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +157,7 @@
         private System.Windows.Forms.TextBox textBoxNOME;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxSOBRENOME;
+        private System.Windows.Forms.Label labelSELECIONAR;
+        private System.Windows.Forms.DataGridView dataGridViewSELECIONAR;
     }
 }

@@ -27,21 +27,43 @@ namespace UC11_AGENDA
 
         private void buttonCADASTRAR_Click(object sender, EventArgs e)
         {
-            try
+            if (radioButtonBLOQUEADO.Checked)
             {
-                conexao.Open();
-                comando.CommandText = "INSERT INTO tbl_agenda(nome, sobrenome, telefone, celular, email, linkedin, bloqueado) VALUES ('" + textBoxNOME.Text + "', '" + textBoxSOBRENOME.Text + "', '" + textBoxTELEFONE.Text + "','" + textBoxCELULAR.Text + "', '" + textBoxEMAIL.Text + "', '" + textBoxLINKEDIN.Text + "', '" + radioButtonBLOQUEADO.Text + "'); ";
-                comando.ExecuteNonQuery();
-                MessageBox.Show("cadastrado");
+                try
+                {
+                    conexao.Open();
+                    comando.CommandText = "INSERT INTO tbl_agenda(nome, sobrenome, telefone, celular, email, linkedin, bloqueado) VALUES ('" + textBoxNOME.Text + "', '" + textBoxSOBRENOME.Text + "', '" + textBoxTELEFONE.Text + "','" + textBoxCELULAR.Text + "', '" + textBoxEMAIL.Text + "', '" + textBoxLINKEDIN.Text + "', '" + radioButtonBLOQUEADO.Text + "'); ";
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("cadastrado");
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show(erro.Message);
+                    MessageBox.Show("Erro ao cadastrar, Fale com o Adiministrador do sistema");
+                }
+                finally
+                {
+                    conexao.Close();
+                }
             }
-            catch (Exception erro)
+            else
             {
-                MessageBox.Show(erro.Message);
-                MessageBox.Show("Erro ao cadastrar, Fale com o Adiministrador do sistema");
-            }
-            finally
-            {
-                conexao.Close();
+                try
+                {
+                    conexao.Open();
+                    comando.CommandText = "INSERT INTO tbl_agenda(nome, sobrenome, telefone, celular, email, linkedin, bloqueado) VALUES ('" + textBoxNOME.Text + "', '" + textBoxSOBRENOME.Text + "', '" + textBoxTELEFONE.Text + "','" + textBoxCELULAR.Text + "', '" + textBoxEMAIL.Text + "', '" + textBoxLINKEDIN.Text + "', '" + radioButtonDESBLOQUEADO.Text + "'); ";
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("cadastrado");
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show(erro.Message);
+                    MessageBox.Show("Erro ao cadastrar, Fale com o Adiministrador do sistema");
+                }
+                finally
+                {
+                    conexao.Close();
+                }
             }
         }
     }
