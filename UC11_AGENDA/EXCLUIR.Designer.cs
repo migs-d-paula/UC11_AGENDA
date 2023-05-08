@@ -38,6 +38,7 @@
             this.textBoxSOBRENOME = new System.Windows.Forms.TextBox();
             this.labelSELECIONAR = new System.Windows.Forms.Label();
             this.dataGridViewSELECIONAR = new System.Windows.Forms.DataGridView();
+            this.labelVOLTAR = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSELECIONAR)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,12 +124,25 @@
             this.dataGridViewSELECIONAR.TabIndex = 10;
             this.dataGridViewSELECIONAR.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSELECIONAR_CellContentClick);
             // 
+            // labelVOLTAR
+            // 
+            this.labelVOLTAR.AutoSize = true;
+            this.labelVOLTAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVOLTAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelVOLTAR.Location = new System.Drawing.Point(12, 9);
+            this.labelVOLTAR.Name = "labelVOLTAR";
+            this.labelVOLTAR.Size = new System.Drawing.Size(28, 20);
+            this.labelVOLTAR.TabIndex = 11;
+            this.labelVOLTAR.Text = "<--";
+            this.labelVOLTAR.Click += new System.EventHandler(this.labelVOLTAR_Click);
+            // 
             // EXCLUIR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1112, 341);
+            this.Controls.Add(this.labelVOLTAR);
             this.Controls.Add(this.dataGridViewSELECIONAR);
             this.Controls.Add(this.labelSELECIONAR);
             this.Controls.Add(this.label3);
@@ -159,5 +173,6 @@
         private System.Windows.Forms.TextBox textBoxSOBRENOME;
         private System.Windows.Forms.Label labelSELECIONAR;
         private System.Windows.Forms.DataGridView dataGridViewSELECIONAR;
+        private System.Windows.Forms.Label labelVOLTAR;
     }
 }

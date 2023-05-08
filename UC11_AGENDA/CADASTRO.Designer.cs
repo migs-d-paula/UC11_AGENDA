@@ -44,6 +44,7 @@
             this.buttonCADASTRAR = new System.Windows.Forms.Button();
             this.radioButtonBLOQUEADO = new System.Windows.Forms.RadioButton();
             this.radioButtonDESBLOQUEADO = new System.Windows.Forms.RadioButton();
+            this.labelVOLTAR = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxNOME
@@ -185,12 +186,25 @@
             this.radioButtonDESBLOQUEADO.Text = "Desbloqueado";
             this.radioButtonDESBLOQUEADO.UseVisualStyleBackColor = true;
             // 
+            // labelVOLTAR
+            // 
+            this.labelVOLTAR.AutoSize = true;
+            this.labelVOLTAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVOLTAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelVOLTAR.Location = new System.Drawing.Point(12, 9);
+            this.labelVOLTAR.Name = "labelVOLTAR";
+            this.labelVOLTAR.Size = new System.Drawing.Size(28, 20);
+            this.labelVOLTAR.TabIndex = 20;
+            this.labelVOLTAR.Text = "<--";
+            this.labelVOLTAR.Click += new System.EventHandler(this.labelVOLTAR_Click);
+            // 
             // CADASTRO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(791, 591);
+            this.Controls.Add(this.labelVOLTAR);
             this.Controls.Add(this.buttonCADASTRAR);
             this.Controls.Add(this.radioButtonDESBLOQUEADO);
             this.Controls.Add(this.radioButtonBLOQUEADO);
@@ -231,5 +245,6 @@
         private System.Windows.Forms.Button buttonCADASTRAR;
         private System.Windows.Forms.RadioButton radioButtonBLOQUEADO;
         private System.Windows.Forms.RadioButton radioButtonDESBLOQUEADO;
+        private System.Windows.Forms.Label labelVOLTAR;
     }
 }

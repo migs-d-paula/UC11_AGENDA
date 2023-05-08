@@ -33,6 +33,7 @@
             this.textBoxPESQUISA = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonPESQUISAR = new System.Windows.Forms.Button();
+            this.labelVOLTAR = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPESQUISA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,12 +76,25 @@
             this.buttonPESQUISAR.UseVisualStyleBackColor = true;
             this.buttonPESQUISAR.Click += new System.EventHandler(this.buttonPESQUISAR_Click);
             // 
+            // labelVOLTAR
+            // 
+            this.labelVOLTAR.AutoSize = true;
+            this.labelVOLTAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVOLTAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelVOLTAR.Location = new System.Drawing.Point(12, 9);
+            this.labelVOLTAR.Name = "labelVOLTAR";
+            this.labelVOLTAR.Size = new System.Drawing.Size(28, 20);
+            this.labelVOLTAR.TabIndex = 12;
+            this.labelVOLTAR.Text = "<--";
+            this.labelVOLTAR.Click += new System.EventHandler(this.labelVOLTAR_Click);
+            // 
             // PESQUISA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(902, 573);
+            this.Controls.Add(this.labelVOLTAR);
             this.Controls.Add(this.buttonPESQUISAR);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxPESQUISA);
@@ -100,5 +114,6 @@
         private System.Windows.Forms.TextBox textBoxPESQUISA;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonPESQUISAR;
+        private System.Windows.Forms.Label labelVOLTAR;
     }
 }

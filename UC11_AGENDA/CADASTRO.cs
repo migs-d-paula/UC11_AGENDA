@@ -66,5 +66,10 @@ namespace UC11_AGENDA
                 }
             }
         }
+
+        private void labelVOLTAR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

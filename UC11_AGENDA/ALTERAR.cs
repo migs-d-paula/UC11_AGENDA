@@ -113,5 +113,10 @@ namespace UC11_AGENDA
             textBoxEMAIL.Text = dataGridViewSELECIONAR.CurrentRow.Cells[5].Value.ToString();
             textBoxLINKEDIN.Text = dataGridViewSELECIONAR.CurrentRow.Cells[6].Value.ToString();
         }
+
+        private void labelVOLTAR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -94,5 +94,10 @@ namespace UC11_AGENDA
             textBoxNOME.Text = dataGridViewSELECIONAR.CurrentRow.Cells[1].Value.ToString();
             textBoxSOBRENOME.Text = dataGridViewSELECIONAR.CurrentRow.Cells[2].Value.ToString();
         }
+
+        private void labelVOLTAR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
