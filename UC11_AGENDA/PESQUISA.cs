@@ -98,7 +98,7 @@ namespace UC11_AGENDA
             try
             {
                 conexao.Open();
-                comando.CommandText = "SELECT * FROM tbl_agenda WHERE nome LIKE '" + textBoxPESQUISA.Text + "' OR sobrenome LIKE '" + textBoxPESQUISA.Text + "' OR telefone LIKE '" + textBoxPESQUISA.Text + "' OR celular LIKE '" + textBoxPESQUISA.Text + "' OR linkedin LIKE '" + textBoxPESQUISA.Text + "' OR bloqueado LIKE '" + textBoxPESQUISA.Text + "' ;";
+                comando.CommandText = "SELECT * FROM tbl_agenda WHERE nome LIKE '" + textBoxPESQUISA.Text + "'% OR sobrenome LIKE '" + textBoxPESQUISA.Text + "'% OR telefone LIKE '" + textBoxPESQUISA.Text + "'% OR celular LIKE '" + textBoxPESQUISA.Text + "'% OR linkedin LIKE '" + textBoxPESQUISA.Text + "'% OR bloqueado LIKE '" + textBoxPESQUISA.Text + "'% ;";
 
                 MySqlDataAdapter adaptadorPESQUISA = new MySqlDataAdapter(comando);
 
